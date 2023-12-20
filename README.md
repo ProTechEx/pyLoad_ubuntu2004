@@ -63,3 +63,27 @@ Group=root
 [Install]
 WantedBy=default.target
 ```
+
+> systemctl
+```shell script
+sudo systemctl daemon-reload  # Reload systemd to apply the changes
+sudo systemctl start pyload   # Start the pyload service
+sudo systemctl enable pyload  # Optional: Enable on boot
+sudo systemctl status pyload  # Check status
+```
+
+> Adding new user
+```shell script
+sudo python /usr/share/pyload/pyLoadCore.py -u
+```
+
+> Config Files Location
+```
+/root/.pyload
+```
+
+> PyLoad Path:
+```
+/opt/pyload
+```
+
