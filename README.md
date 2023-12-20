@@ -38,7 +38,7 @@ sudo python /usr/share/pyload/pyLoadCore.py -s
 nohup python /usr/share/pyload/pyLoadCore.py &
 ```
 
-<h2>Start pyLoad as Service:<h2>
+<h3>Start pyLoad as Service:<h3>
 
 > Edit:
 
