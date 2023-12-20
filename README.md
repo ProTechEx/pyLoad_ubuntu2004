@@ -22,8 +22,18 @@ wget https://github.com/pyload/pyload/releases/download/v0.4.20/pyload-cli_0.4.2
 sudo dpkg -i pyload-cli_0.4.20_all.deb
 ```
 
-<h3>You can restart configuration over cli with:</h3>
+<h4>You can restart configuration over cli with:</h4>
 
 ```shell script
 sudo python /usr/share/pyload/pyLoadCore.py -s
+```
+
+<h3>Start pyLoad</h3>
+
+`sudo pyLoadCore` or with `sudo python /usr/share/pyload/pyLoadCore.py`
+
+<h3>Run PyLoad in Background</h3>
+
+```shell script
+nohup python /usr/share/pyload/pyLoadCore.py &
 ```
