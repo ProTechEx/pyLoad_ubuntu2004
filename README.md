@@ -37,3 +37,29 @@ sudo python /usr/share/pyload/pyLoadCore.py -s
 ```shell script
 nohup python /usr/share/pyload/pyLoadCore.py &
 ```
+
+<h2>Start pyLoad as Service:<h2>
+
+> Edit:
+
+```shell script
+sudo nano /etc/systemd/system/pyload.service
+```
+
+> Add/Replace with following lines:
+
+```shell script
+[Unit]
+Description=pyLoadCore Download Manager
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python /usr/share/pyload/pyLoadCore.py --config=/root/.pyload
+WorkingDirectory=/opt/pyload
+Restart=always
+User=root
+Group=root
+
+[Install]
+WantedBy=default.target
+```
